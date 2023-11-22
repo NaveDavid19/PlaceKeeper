@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/user-serrings.css">
+</head>
+
+<body onload="onInit()">
+    <form id="frmRegister" onsubmit="getFormData(event)">
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" placeholder="Insert your email here" />
+
+        <label for="age">Age: <span id="sAge"></span></label>
+        <input type="range" id="age" name="age" step="1" min="18" max="120">
+
+        <label for="bcg">Set Background Color</label>
+        <input type="color" id="bcg" name="bcg">
+
+        <label for="textColor">Set Text Color</label>
+        <input type="color" id="textColor" name="textColor">
+
+        <label for="dob">Birth Date:</label>
+        <input type="date" id="dob" name="dob" />
+
+        <label for="tob">Birth Time:</label>
+        <input type="time" id="tob" name="tob" />
+
+        <button>Set</button>
+
+    </form>
+    <script src="js/services/userService.js"></script>
+    <script src="js/storageService.js"></script>
+    <script src="js/user-controller.js"></script>
+
+</body>
+
+</html>
